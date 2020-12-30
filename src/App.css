@@ -4,12 +4,66 @@
 
 .landing-grid{
   background-color: #0000;
+  text-align: center;
+  /* padding: 0;
+  align-items: center;
+  font-family: consolas;
+  height: 100vh;
+  display: flex;
+  justify-content: center; */
+}
+
+.scrambler{
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+
+}
+
+h4{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  overflow: hidden;
+
+}
+
+h4 span{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+
+}
+
+h4:hover span{
+  animation: shuffle steps(5) 2s infinite;
+
+}
+
+@keyframes shuffle{
+  0%
+  {
+    transform: translateY(0px);
+
+  }
+
+  100%
+  {
+    transform: translateY(-250px);
+
+  }
 }
 
 .avatar-img{
   height: 250px;
-  padding-top: 5cm;
-  align-items: center;
+  /* padding-top: 5cm; */
 }
 
 .typewriter{
