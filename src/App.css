@@ -1,12 +1,124 @@
 .header-color{
-  background: #0000;
+  background-color: #833ab4;
 }
 
 .landing-grid{
-  background: #0000;
-
+  background-color: #0000;
 }
 
 .avatar-img{
-  height: 250;
+  height: 250px;
+  padding-top: 5cm;
+  align-items: center;
+}
+
+.typewriter{
+  background-color: black;
+  opacity: .8;
+  width: 75;
+  margin: auto;
+  border-radius: 10px;
+
+}
+
+/* .bio-text h1{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+} */
+
+/* GLOBAL STYLES */
+/* body {
+  background: #333;
+  display: inline-block;
+  justify-content: center;
+} */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /*Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+body {background:#f3efe8;}
+.loading {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  text-transform:uppercase;
+  
+  width:150px;
+  text-align:center;
+  line-height:50px;
+  
+  position:absolute;
+  left:0;right:0;top:50%;
+  margin:auto;
+  transform:translateY(-50%);
+}
+
+.loading span {
+  position:relative;
+  z-index:999;
+  color:#fff;
+}
+.loading:before {
+  content:'';
+  background:#61bdb6;
+  width:128px;
+  height:36px;
+  display:block;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  
+  animation:2s loadingBefore infinite ease-in-out;
+}
+
+@keyframes loadingBefore {
+  0%   {transform:translateX(-14px);}
+  50%  {transform:translateX(14px);}
+  100% {transform:translateX(-14px);}
+}
+
+
+.loading:after {
+  content:'';
+  background:#ff3600;
+  width:14px;
+  height:60px;
+  display:block;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  opacity:.5;
+  
+  animation:2s loadingAfter infinite ease-in-out;
+}
+
+@keyframes loadingAfter {
+  0%   {transform:translateX(-50px);}
+  50%  {transform:translateX(50px);}
+  100% {transform:translateX(-50px);}
 }
