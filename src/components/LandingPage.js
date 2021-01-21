@@ -17,29 +17,9 @@ class LandingPage extends Component {
                         <h1>Aspiring Web Developer</h1>
                     </div>
 
-                    {/* <div class="loading">
-                        <span>Loading</span>
-                    </div> */}
-
-
                 </Grid>
-
-                <div className="scrambler">
-                    <h4>
-                        <span>HTML/CSS | Python | JavaScript</span>
-                        <span>+T\L/[S5 | 9yt#0n | J\v/S[ri6t</span>
-                        <span>H=M|/CS2 | P4+ho^ | 7a^a5c?1p+</span>
-                        <span>H%;-/CS* | 8yt@o! | J'v$,c|i:t</span>
-                        <span>'T!L/~S@ | P#t%o( | J_va$c^ip-</span>
-                    </h4>
-                </div>
-
-
-                
-            </div>
-            
+            </div>   
         )
     }
 }
-
 export default LandingPage;

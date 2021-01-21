@@ -47,6 +47,18 @@ h4:hover span{
 
 }
 
+.socialLinks{
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.socialLinks i{
+  color: black;
+  font-size: 5em;
+  padding: 8px;
+}
+
 @keyframes shuffle{
   0%
   {
@@ -74,6 +86,27 @@ h4:hover span{
   border-radius: 10px;
 
 }
+
+/* html, body{
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text{
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+}
+.dud{
+  color: #757575;
+} */
 
 /* .bio-text h1{
   font-size: 66px;
@@ -117,7 +150,7 @@ h4:hover span{
   50% { border-color: orange }
 }
 
-body {background:#f3efe8;}
+body {background:hsl(0, 0%, 11%);}
 .loading {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   text-transform:uppercase;
