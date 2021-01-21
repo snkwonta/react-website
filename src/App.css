@@ -3,14 +3,8 @@
 }
 
 .landing-grid{
-  background-color: #0000;
+  background-color:black;
   text-align: center;
-  /* padding: 0;
-  align-items: center;
-  font-family: consolas;
-  height: 100vh;
-  display: flex;
-  justify-content: center; */
 }
 
 .scrambler{
@@ -54,7 +48,7 @@ h4:hover span{
 }
 
 .socialLinks i{
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 5em;
   padding: 8px;
 }
@@ -87,42 +81,6 @@ h4:hover span{
 
 }
 
-/* html, body{
-  font-family: 'Roboto Mono', monospace;
-  background: #212121;
-  height: 100%;
-}
-.container{
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.text{
-  font-weight: 100;
-  font-size: 28px;
-  color: #FAFAFA;
-}
-.dud{
-  color: #757575;
-} */
-
-/* .bio-text h1{
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
-  display: inline-block;
-  text-align: center;
-} */
-
-/* GLOBAL STYLES */
-/* body {
-  background: #333;
-  display: inline-block;
-  justify-content: center;
-} */
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {

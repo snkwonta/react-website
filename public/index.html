@@ -13,6 +13,8 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="scramble.js"></script>
 
     <style>
 
@@ -45,14 +47,28 @@
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    
+    <div id=root></div>
 
-    <div className="typewriter">
-      <h1>Aspiring Web Developer</h1>
-  </div>
 
-    <div class="container">
-      <div class="text"></div>
-    </div> 
+    <script>
+      const phrases = ['HTML/CSS | Java | Python | JavaScript']
+
+      const el = document.querySelector('.text');
+      const fx = new TextScramble(el);
+      let counter = 0;
+
+      const next = () =>{
+          fx.setText(phrases[counter]).then(() => {
+              setTimeout(next, 800);
+
+          });
+          counter = (counter +1) % phrases.length;
+      };
+
+      next();
+  </script>
+
+
+
   </body>
 </html>
