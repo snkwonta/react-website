@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Cell, Grid, Tab, Tabs, Card, CardActions, Button, CardMenu, IconButton, CardTitle} from 'react-mdl';
+import {Cell, Grid, Tab, Tabs, Card, CardActions, Button, CardMenu, IconButton, CardTitle, CardText} from 'react-mdl';
 
 class Projects extends Component {
     constructor(props){
@@ -11,18 +11,36 @@ class Projects extends Component {
         if(this.state.activeTab === 0){
             return(
                 <Card shadow={5} style={{minWidth: '250', margin:'auto'}}>
-                    <CardTitle style={{color: '#ffff'}}></CardTitle>
+                    <CardTitle style={{color: '#ffff', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png) center / cover' }}></CardTitle>
+                    <CardText>This Portfolio Website</CardText>
+                    <CardActions border>
+                        <Button colored href="https://github.com/snkwonta/react-website" target='_blank'>GitHub</Button>
+                    </CardActions>
 
                 </Card>
             )
         }else if(this.state.activeTab === 1){
             return(
-                <div><h1>This is Java</h1></div>
+                <Card shadow={5} style={{minWidth: '250', margin:'auto'}}>
+                <CardTitle style={{color: '#ffff', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png) center / cover' }}></CardTitle>
+                <CardText>School Project</CardText>
+                <CardActions border>
+                    <Button colored href="https://github.com/snkwonta/PalindromeArray" target='_blank'>GitHub</Button>
+                </CardActions>
+
+            </Card>
             )
 
         }else if(this.state.activeTab === 2){
             return(
-                <div><h1>This is HTML</h1></div>
+                <Card shadow={5} style={{minWidth: '250', margin:'auto'}}>
+                <CardTitle style={{color: '#ffff', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png) center / cover' }}></CardTitle>
+                <CardText>Reversi Game</CardText>
+                <CardActions border>
+                    <Button colored href="https://github.com/snkwonta/Reversi" target='_blank'>GitHub</Button>
+                </CardActions>
+
+            </Card>
             )
 
         }
