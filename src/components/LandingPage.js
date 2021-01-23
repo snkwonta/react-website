@@ -3,23 +3,29 @@ import { Grid, Cell } from 'react-mdl';
 
 class LandingPage extends Component {
     render(){
-        <div class="container">
-            <div class="text"></div>
-        </div> 
         return (
             <div style={{width: '100', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
                         <img
-                            src="https://cdn4.iconfinder.com/data/icons/occupation-and-people-avatar-vol-3-2/128/person_avatar_student_young_people_man_skinhead-512.png"
+                            src="https://avatars.githubusercontent.com/u/25233310?s=460&u=85d271976b78912071e27631ad5a1d2ee9e7e296&v=4"
                             alt="avatar"
                             className="avatar-img"
                         />
-                    </Cell>
-                    <div className="typewriter">
-                        <h1>Aspiring Web Developer</h1>
-                    </div>
 
+                        <div className="banner-text">
+                            <div className="typewriter">
+                                <h1>Aspiring Web Developer</h1>
+                            </div>
+                            <hr/>
+                            <div className="typewriter1">
+                                <h3>HTML | CSS | Python</h3>
+                            </div>
+                                    
+
+
+                        </div>
+                    </Cell>
                     <div class="socialLinks" class="center">
                         <a href="https://github.com/snkwonta" target="_blank" rel="noreferrer">
                             <i class="fa fa-github-square" aria-hidden="true"></i>
@@ -28,6 +34,8 @@ class LandingPage extends Component {
                             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         </a>
                     </div>
+
+
                 </Grid>
             </div>   
         )

@@ -1,44 +1,36 @@
-.header-color{
+.demo-big-content Link:hover{ 
+  color: rgb(28, 121, 184);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.demo-big-content .header-color{
   background-color: #833ab4;
+  
 }
 
 .landing-grid{
-  background-color:black;
+  background-color:white;
   text-align: center;
 }
 
-.scrambler{
-  margin: 0;
-  padding: 0;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: consolas;
-
+.banner-text{
+  background-color: black;
+  margin: auto;
+  width: 67%;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
-h4{
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 50px;
-  overflow: hidden;
-
+.banner-text hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
 }
 
-h4 span{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: center;
-
-}
-
-h4:hover span{
-  animation: shuffle steps(5) 2s infinite;
-
+.banner-text p{
+  color: white;
+  font-size: 20px;
+  padding: 1em;
 }
 
 .socialLinks{
@@ -81,9 +73,32 @@ h4:hover span{
 
 }
 
+.typewriter1{
+  background-color: black;
+  opacity: .8;
+  width: 75;
+  margin: auto;
+  border-radius: 10px;
+  
+
+}
+
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /*Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.typewriter1 h3 {
   color: #fff;
   font-family: monospace;
   overflow: hidden; /*Ensures the content is not revealed until the animation */
@@ -108,58 +123,9 @@ h4:hover span{
   50% { border-color: orange }
 }
 
-body {background:hsl(0, 0%, 11%);}
-.loading {
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-  text-transform:uppercase;
-  
-  width:150px;
-  text-align:center;
-  line-height:50px;
-  
-  position:absolute;
-  left:0;right:0;top:50%;
-  margin:auto;
-  transform:translateY(-50%);
-}
 
-.loading span {
-  position:relative;
-  z-index:999;
-  color:#fff;
-}
-.loading:before {
-  content:'';
-  background:#61bdb6;
-  width:128px;
-  height:36px;
-  display:block;
-  position:absolute;
-  top:0;left:0;right:0;bottom:0;
-  margin:auto;
-  
-  animation:2s loadingBefore infinite ease-in-out;
-}
+body {background:white;
 
-@keyframes loadingBefore {
-  0%   {transform:translateX(-14px);}
-  50%  {transform:translateX(14px);}
-  100% {transform:translateX(-14px);}
-}
-
-
-.loading:after {
-  content:'';
-  background:#ff3600;
-  width:14px;
-  height:60px;
-  display:block;
-  position:absolute;
-  top:0;left:0;right:0;bottom:0;
-  margin:auto;
-  opacity:.5;
-  
-  animation:2s loadingAfter infinite ease-in-out;
 }
 
 @keyframes loadingAfter {
@@ -172,13 +138,14 @@ body {background:hsl(0, 0%, 11%);}
   display: flex;
 }
 
-/* .hover08 figure img {
+.projects-grid style{
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover08 figure:hover img {
+.projects-grid style:hover {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-} */
+}
+

@@ -81,7 +81,7 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://store-images.s-microsoft.com/image/apps.40439.13902272735533786.62dcd87f-a7f1-4a5f-a2b7-ff69f15a9bcc.fee5bed0-c445-44c4-b6cb-09ae31b4c69b?mode=scale&q=90&h=1080&w=1920) center / cover'}} >Reversi Game</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://store-images.s-microsoft.com/image/apps.40439.13902272735533786.62dcd87f-a7f1-4a5f-a2b7-ff69f15a9bcc.fee5bed0-c445-44c4-b6cb-09ae31b4c69b?mode=scale&q=90&h=1080&w=1920) center / cover' }} >Reversi Game</CardTitle>
             <CardText>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             </CardText>

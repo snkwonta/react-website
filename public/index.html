@@ -15,32 +15,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src="scramble.js"></script>
-
-    <style>
-
-      html, body{
-        font-family: 'Roboto Mono', monospace;
-        background: #212121;
-        height: 100%;
-      }
-      .container{
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-      .text{
-        font-weight: 100;
-        font-size: 28px;
-        color: #FAFAFA;
-      }
-      .dud{
-        color: #757575;
-      }
-    </style>
-    
-    <!-- <script type="text/javascript" src="scramble.js"></script> -->
     <title>React App</title>
   </head>
 
@@ -49,26 +23,9 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id=root></div>
 
-
-    <script>
-      const phrases = ['HTML/CSS | Java | Python | JavaScript']
-
-      const el = document.querySelector('.text');
-      const fx = new TextScramble(el);
-      let counter = 0;
-
-      const next = () =>{
-          fx.setText(phrases[counter]).then(() => {
-              setTimeout(next, 800);
-
-          });
-          counter = (counter +1) % phrases.length;
-      };
-
-      next();
-  </script>
-
-
-
+    <div class="container">
+      <div class="text"></div>
+    </div> 
+    
   </body>
 </html>
