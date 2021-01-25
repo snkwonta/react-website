@@ -69,9 +69,26 @@ class Resume extends Component {
                         </p>
 
 
+                        <p>HTML</p>
+                        <ProgressBar progress={80} />
+
+                        <p>Java</p>
+                        <ProgressBar progress={85} />
+
+                        <p>Python</p>
+                        <ProgressBar progress={70} />
+
+                        <p>CSS</p>
+                        <ProgressBar progress={80} />
+
+
+                    </Cell>
+
+                    <Cell>
+
                     </Cell>
                 </Grid>
-                <ProgressBar progress={44} />
+                
             </div>
         )
     }
