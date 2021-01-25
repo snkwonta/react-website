@@ -149,3 +149,10 @@ body {background:white;
 	filter: grayscale(0);
 }
 
+
+/* Resume Page */
+.resume-right-col{
+  background-color: black;
+  color: white;
+}
+
