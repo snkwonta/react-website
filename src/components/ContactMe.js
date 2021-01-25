@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import { Grid, Cell } from 'react-mdl';
+import logo from './IMG_0022.PNG';
 
-class ContactMe extends Component {
+class LandingPage extends Component {
     render(){
         return (
-            <div>
-                <h1>Contact Page</h1>
-            </div>
+            <h1>LandingPage</h1>
         )
     }
 }
-
-export default ContactMe;
+export default LandingPage;
